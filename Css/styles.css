@@ -510,6 +510,86 @@ video {
   }
 }
 
+/* =========== Sports ============ */
+.Sports {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+
+.Sports .read-more-btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.Sports .read-more-btn:hover {
+  background-color: #0056b3; 
+}
+
+
+
+.Sports .title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.Sports .spots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Sports .spot {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+}
+
+.Sports .spot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Sports .spot h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff; 
+  margin: 15px;
+}
+
+.Sports .spot p {
+  font-size: 1rem;
+  color: #666;
+  margin: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .Sports .spots-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Sports .spot {
+    width: 100%;
+  }
+}
+
 /* =========== Contact Us ============ */
 .contact .title {
   text-align: center;
