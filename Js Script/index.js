@@ -101,8 +101,21 @@ scroll.reveal(`.trip .title,.more .col:first-child,.newsletter .col`, {
 
 document.getElementById("load-more").addEventListener("click", function () {
   const hiddenSports = document.querySelectorAll(".spot.hidden");
-  hiddenSports.forEach((sport) => {
-    sport.classList.remove("hidden");
+  hiddenSports.forEach((sport, index) => {
+    if (index < 3) { 
+      sport.classList.remove("hidden");
+      sport.classList.add("fade-in"); 
+    }
   });
-  this.style.display = "none"; 
+
+ 
+  if (document.querySelectorAll(".spot.hidden").length === 0) {
+    this.style.display = "none";
+  }
+
+
+  scroll.reveal(`.spot.fade-in`, {
+    origin: "bottom",
+    interval: 150,
+  });
 });
