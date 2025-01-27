@@ -98,3 +98,11 @@ scroll.reveal(`.service .col,.trip .row`, {
 scroll.reveal(`.trip .title,.more .col:first-child,.newsletter .col`, {
   origin: "left",
 });
+
+document.getElementById("load-more").addEventListener("click", function () {
+  const hiddenSports = document.querySelectorAll(".spot.hidden");
+  hiddenSports.forEach((sport) => {
+    sport.classList.remove("hidden");
+  });
+  this.style.display = "none"; 
+});
