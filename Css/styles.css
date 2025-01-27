@@ -568,9 +568,10 @@ video {
 
 .Sports .spot img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 200px; 
+  object-fit: cover; 
 }
+
 
 .Sports .spot h3 {
   font-size: 1.5rem;
