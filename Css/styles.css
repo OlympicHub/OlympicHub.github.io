@@ -1,5 +1,5 @@
 /* =========== Fonts ============ */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* =========== Browser Reset ============ */
 :root {
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", serif;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: var(--white);
