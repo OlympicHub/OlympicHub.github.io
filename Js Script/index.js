@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
   navList.classList.toggle("open");
 });
 
-// Discount Media
+// Media
 const video = document.querySelector(".video");
 const button = document.querySelector(".video-control");
 
@@ -21,14 +21,6 @@ function playpausevideo() {
     video.pause();
   }
 }
-
-// Preloader
-const loader = document.querySelector(".loader");
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 2000);
-});
 
 // Fix Nav
 const navigation = document.querySelector(".navigation");
